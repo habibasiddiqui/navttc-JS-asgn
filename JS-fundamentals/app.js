@@ -150,6 +150,22 @@
 
 
 
+// 13
+// var userSalary = +prompt ("Enter salary", 50000);
+// if (userSalary < 60000)
+// {
+//     console.log("You are a junior developer");
+// }
+// else if ( (userSalary >= 60000) && (userSalary < 100000))
+// {
+//     console.log("You are a web developer");
+// }
+// else if (userSalary >= 100000)
+// {
+//     console.log("You are a software engineer");
+// }
+// else 
+//     console.log("Not a developer");
 
 
 
@@ -164,7 +180,7 @@
 // var arr = ['Habiba', 26, 'Pakistan'];
 // var userInput = prompt("Enter your input", 'input');
 // function inArray(word, arr) {
-//     var flag = 0;
+//     var flag;
 //     for (var i = 0; i < arr.length; i++)
 //     {
 //         if( word == arr[i] )
@@ -187,19 +203,72 @@
 
 
 // 2
+
+// // using 1 for loop
 // var firstName = ['maryam', 'habiba', 'esha'];
-// var lastName = ['jameel', 'sultan', 'khan'];
+// var lastName = ['jameel', 'sultana', 'khan'];
 // var fullName = [];
 // if (firstName.length == lastName.length)
 // {
 //     for(var i = 0; i < firstName.length; i++)
 //     {
-//         fullName[i] = firstName[i] + ' ';
+
+//             fullName[i] = firstName[i] + ' ' + lastName[i];
+
+//     }
+// };
+// console.log(fullName);
+
+
+
+// // using 2 for loop (complicated method; trying to do it as 2d array)
+// var firstName = ['maryam', 'habiba', 'esha'];
+// var lastName = ['jameel', 'sultana', 'khan'];
+// var fullName = [];
+// if (firstName.length == lastName.length)
+// {
+//     for(var i = 0; i < firstName.length; i++)
+//     {
 //         for(var j = i; j < lastName.length; j++)
 //         {
-//             fullName[i] += lastName[j];
+//             fullName[i] = firstName[i] + ' ' + lastName[j];
 //             break;
 //         }
 //     }
 // };
 // console.log(fullName);
+
+
+
+
+// var firstName = ['maryam', 'habiba', 'esha'];
+// var lastName = ['jameel', 'sultana', 'khan'];
+// var fullName = [];
+
+
+// // map
+// // fullName = firstName.map( () => {
+// //     for (var j = lastName.length; j > 0; j--) {
+// //         return lastName.shift();
+// //     }
+// // });
+
+
+
+// console.log( fullName);
+
+
+
+// 3
+var courses = [];
+var course;
+for (var i = 0; i < 5; i++)
+{
+    course = prompt(`enter course ${i+1}`, 'course');
+    courses.push(course);
+
+}
+console.log(courses);
+
+
+
