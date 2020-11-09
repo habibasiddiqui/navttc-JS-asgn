@@ -169,7 +169,148 @@
 
 
 
+// 14
+// var str = prompt("Enter your string", 'write here!');
+// var exclaimInd = str.indexOf('!');
+// if(exclaimInd != -1)
+// {
+//     console.log(`excaimation mark is found at ${exclaimInd}`);
+// }
+// else 
+//     console.log("exclaimation mark not found");
 
 
 
+// 15
+// var str = prompt("Enter your string", 'write  here');
 
+// // // just once using indexOf()
+// // var twoSpaces = str.indexOf('  ');
+// // if(twoSpaces != -1)
+// //     console.log("2 spaces found");
+// // else 
+// //     console.log("2 spaces NOT found");
+
+
+// // // more than once using slice()
+// var flag = 0;
+// for (var i=0; i<str.length; i++)
+// {
+//     if(str.slice(i, i+2) == '  ')
+//     {
+//             flag++;
+//     }
+// }
+// if (flag == 0)
+//     console.log('two spaces NOT found');
+// else
+//     console.log(`${str}
+//     two spaces found ${flag} times`);
+
+
+
+// 16
+// agile method (start with small, then go big)
+
+// var str ='the quick brown fox jumps over the lazy dog';
+// var toAdd = 'white cat';
+// var toRemove = 'quick brown fox';
+// var ind = str.indexOf(toRemove);
+// //  (toRemove.length+ind) is the ending address of toRemove string in original string
+// var newStr = str.slice(0, ind) + toAdd + str.slice((toRemove.length + ind));
+// console.log(str, newStr);
+
+
+// // replace() just once
+// var str ='the quick brown fox jumps over the lazy dog';
+// var newStr = str.replace('quick brown fox', 'white cat');
+// console.log(str, newStr);
+
+
+// // replace() globally
+// var str ='the quick brown fox jumps quick brown fox over the quick brown fox lazy dog';
+// var newStr = str.replace(/quick brown fox/g, 'white cat');
+// console.log(str + ' ====> ' + newStr);
+
+
+
+// 17
+// var num = +prompt("Enter a number", 12.67);
+// var decimalPlace = +prompt("Enter decimal places", 3);
+// var newNum  = num.toFixed(decimalPlace);
+// console.log(`${num} limited to ${decimalPlace} decimal places is ${newNum}`);
+
+
+// using function
+// function limitDecimalPlaces (num, dp)
+// {
+//     var changed = num.toFixed(dp);
+//     return changed;
+// }
+// var num = +prompt("Enter a number", 12.67);
+// var decimalPlace = +prompt("Enter decimal places", 3);
+// var newNum = limitDecimalPlaces(num, decimalPlace);
+// console.log(`${num} limited to ${decimalPlace} decimal places is ${newNum}`);
+
+
+
+// 18
+// // inclusive of only start limit
+// function generateRandom (start, end)
+// {
+//         var randomNum = (Math.random() * (end - start) ) + start;
+//         randomNum = Math.floor(randomNum);
+//         return randomNum;
+// }
+// for (var i=0; i <10; i++)
+// {
+//     var newNum = generateRandom(2, 7);
+//     console.log(newNum);
+// }
+
+
+// // inclusine of both limits
+// function generateRandom (start, end)
+// {
+//         var randomNum = (Math.random() * ((end - start) + 1)) + (start);
+//         randomNum = Math.floor(randomNum);
+//         return randomNum;
+// }
+// for (var i=0; i <10; i++)
+// {
+//     var newNum = generateRandom(2, 7);
+//     console.log(newNum);
+// }
+
+
+
+// 19
+// var numbers = [11, 22, 33, 44, 55, 66, 77, 88, 99, 100];
+// var ind = Math.floor(Math.random() * 10);
+// console.log(`your item at index ${ind} is ${numbers[ind]}`);
+
+
+
+// date() functions
+
+// function currentDate()
+// {
+//     var current = new Date();
+//     current = `${current.getFullYear()}-${current.getMonth() + 1}-${current.getDay()}`;
+//     return current;
+// }
+
+// var date = currentDate();
+// console.log(date);
+
+
+
+// function currentTime()
+// {
+//     var current = new Date();
+//     current = `${current.getHours()}:${current.getMinutes() + 1}:${current.getSeconds()}`;
+//     return current;
+// }
+
+// var time = currentTime();
+// console.log(time);
