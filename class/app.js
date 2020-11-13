@@ -95,3 +95,46 @@
 //         flag = true;
 //     }
 // }
+
+
+
+
+// window. methods
+// function goFB() {
+//     window.location.href = 'https://facebook.com';
+
+//     // window.location.assign('https://facebook.com');
+    
+//     // doesn't let you go back to prvious page as it rewrites history
+//     // window.location.replace('https://facebook.com');
+// }
+
+
+
+// function goBack()
+// {
+//     history.back();
+// }
+
+
+// function reLoad()
+// {
+//     window.location.reload(true);
+// }
+
+
+// function goForward()
+// {
+//     history.forward();
+// }
+
+
+
+
+
+
+
+// var monkeyWindow = window.open();
+// monkeyWindow.location.href = 'popup.html';
+
+var monkeyWindow = window.open('popup.html');
