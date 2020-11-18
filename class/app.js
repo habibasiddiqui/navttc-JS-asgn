@@ -137,4 +137,160 @@
 // var monkeyWindow = window.open();
 // monkeyWindow.location.href = 'popup.html';
 
-var monkeyWindow = window.open('popup.html');
+// var monkeyWindow = window.open('popup.html');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var teachers = ['inzimam', 'faiza', 'mughal'];
+// var students = ['habiba', 'khadija', 'javeria', 'ismat'];
+// var ages = [26, 24, 28, 50];
+// if(teachers.includes('faiza'))
+// {
+//     let data = students.map(
+//         (item, index) => {
+//             let arrObj = {};
+//             arrObj.name = item;
+//             arrObj.age = ages[index];
+//             return arrObj; 
+//         }
+//     );
+//     console.log(data);
+
+// }
+
+
+
+
+// console.log( 5>2 ? true : false )
+
+
+
+
+// spread operator: instead of disturbing original ARRAY or OBJECT, creates new one; 
+// also used to concat 2 or more arrays
+
+// obsolete method
+// var arr = [1,2,3,4];
+// var arr1 = arr;        
+// arr[0] = 8;                  // changes arr as well which we hadn't wanted
+// console.log(arr, arr1);
+
+
+
+// var arr = [1,2,3,4];
+// var arr1 = [...arr];            
+// arr1[0] = 9                     // now both array are d/f
+// console.log(arr, arr1); 
+
+
+// var arr2 = [5,6,7,8];
+// // var arr3 = arr.concat(arr2); 
+// var arr3 = [...arr, ...arr2];       // both this and above line give same results
+// console.log(arr,  arr2, arr3);
+
+
+// var str = 'abcd';
+// var str2 = 'habiba';
+// var str3 = {...str};
+// console.log(str, str2, str3);
+
+
+// var str = 'abcd';
+// var str2 = 'habiba';
+// var str3 = [...str, ..str2];
+// console.log(str, str2, str3);
+
+
+
+// WRONG WRONG WRONG WRONG WRONG WRONG WRONG WRONG WRONG WRONG WRONG 
+// function sum(x,y,z)
+// {
+//     return x+y+z;
+// }
+
+// let arr = [3,4,5];
+// let res = sum(arr);
+// console.log(res);
+
+// CORRECT CORRECT CORRECT CORRECT CORRECT CORRECT CORRECT CORRECT CORRECT 
+// function sum(x,y,z)
+// {
+//     return x+y+z;
+// }
+
+// let arr = [3,4,5];
+// let res = sum(arr);
+// console.log(res);
+
+
+// SPREAD OP CAN ALSO BE USED IN OBJECT DESTRUCTURING
+// let [a,b,c] = [1,2,3];
+// let [d,e,f] = [4,5,6,7,8];
+// console.log(a,b,c,d,e,f);           // OBJECT DESTRUCTURING
+
+// let [a,b,c, ...z] = [3,4,5,6,7,8,9];   // z would get the rest of the elements as an array b/c of ...
+// console.log(a,b,c,z);
+
+
+
+// function abc()
+// {
+//     var a = 1+2;
+//     console.log(a);
+// }
+// var z = abc();          // z gets undefined but there's no error per se; 
+// console.log("z", z)     // i.e. function can always be assigned to a variable etc whether function returns or not
+                        
+
+// subtract multiple argumnts using reduce
+// let subtract = (num1, ...others) => {
+//     let result = others.reduce(
+//         (total, current) => {
+//             return total - current;
+//         });
+//     console.log(result);
+//     // result -= num1;      // is the same as result = result - num1
+//     result = num1 - result;
+//     return result;
+// }
+// var ans = subtract(10,20,3,2,6,4,8,1);
+// // var ans = subtract(10,20);
+// console.log(ans);
+
+
+
+// var a,b,c = 1;
+// console.log(a,b,c);
+
+
+// let foo =  (...e) => {
+//     [a,b,c] = e;
+//     console.log(a,b,c);
+// }
+// foo(1,2,3);

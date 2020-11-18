@@ -119,6 +119,7 @@
 // 4
 // function convertToTitleCase(str) {
 //     var strArr = str.split(" ");
+//     console.log(strArr);
 //     for (var i = 0; i < strArr.length; i++) 
 //     {
 //         strArr[i] = strArr[i][0].toUpperCase() + strArr[i].slice(1).toLowerCase();
