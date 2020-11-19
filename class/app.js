@@ -294,3 +294,83 @@
 //     console.log(a,b,c);
 // }
 // foo(1,2,3);
+
+
+
+
+
+// OBJECT DESTRUCTURING
+// let self = {
+//     name: 'habiba',
+//     age: 26,
+//     status: 'active'
+// };
+// let {name, age, status} = self;
+// console.log(name, age, status);
+
+// let {name, age} = self;
+// console.log(name, age, status);             // habiba 26
+
+// let {name1, age1, status1} = self;          // these let/var/const have to be same as object key
+// console.log(name1, age1, status1);          // undefined
+
+
+
+
+
+// try-catch
+// let addAlert = (a) => 
+//     console.log(a);
+// const num = 10;
+// try 
+// {
+//     addAlert('Hello Everyone!');
+//     num = 5;
+// }
+// catch (err)
+// {
+//     console.log(err);
+// }
+
+
+// function later()
+// {
+//     var r = setTimeout(alert('AOA'), 3000);     // give the function name only, don't call it here
+// }
+
+// let later = () => {
+//     setTimeout(showAlert, 3000);
+// }
+// let showAlert = () => {
+//     alert('Hello World!');
+// }
+
+
+
+
+
+// setInterval and setTimeout
+
+// simple clock
+// let clock = () => {
+
+//     setInterval(() => {
+//         let today = new Date();
+//         let date = today.getDate();
+//         let month = today.getMonth() + 1;
+//         let year = today.getFullYear();
+//         let h = checkTime(today.getHours());
+//         let m = checkTime(today.getMinutes());
+//         let s = checkTime(today.getSeconds());
+//         let div = document.getElementById('myDiv');
+//         div.innerHTML = `${date}-${month}-${year}\n${h}:${m}:${s}`;
+        
+//     }, 1000);
+//     let checkTime = (arg) => {
+//         if (arg < 10)
+//         {
+//             arg = `0${arg}`;
+//         }
+//         return arg;
+//     }
+// }
